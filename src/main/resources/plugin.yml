@@ -1,0 +1,19 @@
+name: StarterPluginDemo
+main: cc.wanforme.nukkit.pspd.ExampleNSPlugin
+version: "1.0.0"
+api: ["1.0.0"]
+load: POSTWORLD
+author: Nukkit Project
+authors: ["wanne"]
+
+commands:
+  test:
+    description: Test command
+    usage: "/test"
+    aliases: []
+    permission: exampleplugin.command.example
+    permission-message: "You do not have the required permission to run /example"
+permissions:
+  exampleplugin.command.example:
+    description: "Allows the user to run the example command"
+    default: true
