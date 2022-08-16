@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cc.wanforme.nukkit</groupId>
-    <artifactId>pnx-starter-plugin-demo</artifactId>
+    <artifactId>simple-plugin-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -19,7 +19,7 @@
         <maven.compiler.compilerVersion>17</maven.compiler.compilerVersion>
         <java.version>17</java.version>
         
-        <powernukkitx.version>1.6.0.0-PNX</powernukkitx.version>
+        <powernukkitx.version>1.19.10-r1</powernukkitx.version>
     </properties>
     
     <dependencies>

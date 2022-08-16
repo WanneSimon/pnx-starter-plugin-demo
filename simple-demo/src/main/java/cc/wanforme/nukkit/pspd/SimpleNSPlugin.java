@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import cc.wanforme.nukkit.springDemo.DashInfo;
 
 @Component
-public class ExampleNSPlugin extends PluginBase {
+public class SimpleNSPlugin extends PluginBase {
 
 	@Autowired
 	@Qualifier("dash1")
@@ -50,4 +50,12 @@ public class ExampleNSPlugin extends PluginBase {
         return true;
     }
 
+    
+    public DashInfo getDash1() {
+		return dash1;
+	}
+    
+    public DashInfo getDash2() {
+		return dash2;
+	}
 }

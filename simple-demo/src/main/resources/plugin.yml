@@ -1,5 +1,5 @@
-name: StarterPluginDemo
-main: cc.wanforme.nukkit.pspd.ExampleNSPlugin
+name: simple-plugin-demo
+main: cc.wanforme.nukkit.pspd.SimpleNSPlugin
 version: "1.0.0"
 api: ["1.0.0"]
 load: POSTWORLD
