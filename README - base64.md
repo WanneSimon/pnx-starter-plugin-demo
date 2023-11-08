@@ -2,6 +2,9 @@
 基于 [px-starter-demo](https://github.com/WanneSimon/pnx-starter-demo) 的简单插件实例。
 不同之处在于使用 `spring` 注解进行开发。 
 
+环境  
+pnx-starter-demo-1.0-SNAPSHOT  
+
 **a. 释义**  
 `pnx`: `PowerNukkitX`  
 核心： 基于 `pnx-spring-boot-starter` 的定制化 `pnx`
