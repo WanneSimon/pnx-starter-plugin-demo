@@ -4,6 +4,7 @@
 
 环境  
 pnx-starter-demo-2.0-SNAPSHOT  
+PowerNukkitX 1.20.40-r1  
 
 **a. 释义**  
 `pnx`: `PowerNukkitX`  
