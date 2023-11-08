@@ -3,7 +3,7 @@
 不同之处在于使用 `spring` 注解进行开发。 
 
 环境  
-pnx-starter-demo-1.0-SNAPSHOT  
+pnx-starter-demo-2.0-SNAPSHOT  
 
 **a. 释义**  
 `pnx`: `PowerNukkitX`  
@@ -28,7 +28,7 @@ pnx-starter-demo-1.0-SNAPSHOT
         <dependency>
             <groupId>cc.wanforme.nukkit</groupId>
             <artifactId>pnx-starter-demo</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>2.0-SNAPSHOT</version>
         </dependency>
 ```
 #### 传统jar依赖引入
@@ -53,7 +53,7 @@ pnx-starter-demo-1.0-SNAPSHOT
 a. 使用 `spring` 的注解 `@Component` 对插件主类进行标记。  
 需要注意两点：  
   1. **优秀的程序员会建立包，不会让任何一个类处于默认包下。** 使用默认包会导致不可预知的错误！ 
-  2. **主类必须位于包的最外层（类似 `spring-boot` 的默认扫描路径。） **  
+  2. **主类必须位于包的最外层（类似 `spring-boot` 的默认扫描路径。）**  
 
 上面两点在后面 `pluign.yml` 配置文件处会解释原因
 
