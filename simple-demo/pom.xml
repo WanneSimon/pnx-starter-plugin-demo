@@ -18,11 +18,6 @@
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.compilerVersion>17</maven.compiler.compilerVersion>
         <java.version>17</java.version>
-
-<!--        <powernukkitx.version>1.6.0.0-PNX</powernukkitx.version>-->
-        <powernukkitx.version>1.20.40-r1</powernukkitx.version>
-        <!-- @see spring-boot-starter-log4j2 -->
-<!--        <log4j2.version>2.20.0</log4j2.version>-->
     </properties>
     
     <dependencies>
@@ -30,14 +25,18 @@
             <groupId>cc.wanforme.nukkit</groupId>
             <artifactId>pnx-starter-demo</artifactId>
             <version>2.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j-impl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j18-impl</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>cn.powernukkitx</groupId>
-            <artifactId>powernukkitx</artifactId>
-            <version>${powernukkitx.version}</version>
-        </dependency>
-        
         <!-- or embeded jar
         <dependency>
             <groupId>cc.wanforme.nukkit</groupId>

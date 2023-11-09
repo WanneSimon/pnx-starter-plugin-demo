@@ -30,6 +30,16 @@ PowerNukkitX 1.20.40-r1
             <groupId>cc.wanforme.nukkit</groupId>
             <artifactId>pnx-starter-demo</artifactId>
             <version>2.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j-impl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j18-impl</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 ```
 #### 传统jar依赖引入

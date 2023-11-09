@@ -30,16 +30,28 @@ PowerNukkitX 1.20.40-r1
             <groupId>cc.wanforme.nukkit</groupId>
             <artifactId>pnx-starter-demo</artifactId>
             <version>2.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j-impl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j18-impl</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 ```
-#### 传统jar依赖引入
+#### Importing jars
+传统jar依赖引入
 1. 右键项目 > `Build Path` > `Configure Build Path...`  
    ![Project-BuildPath][BuildPath]
 2. 右侧视图 > `Libraries` > `Classpath` >  `Add External JARS...`
 3. 选择你已经打包的的核心, 最后 `Apply and Close`  
    ![Project-Libraries][Libraries]
 
-#### eclipse 关联项目
+#### Importing project in Eclipse
+eclipse 关联项目
 核心项目与插件项目在同一工作空间时，可以采用这种方式。  
 这种方式更有利于发现核心的问题，同时，核心所做的修改会立即同步到插件项目中。  
 1. 右键项目 > `Build Path` > `Configure Build Path...`  
@@ -54,7 +66,7 @@ PowerNukkitX 1.20.40-r1
 a. 使用 `spring` 的注解 `@Component` 对插件主类进行标记。  
 需要注意两点：  
   1. **优秀的程序员会建立包，不会让任何一个类处于默认包下。** 使用默认包会导致不可预知的错误！ 
-  2. **主类必须位于包的最外层（类似 `spring-boot` 的默认扫描路径。） **  
+  2. **主类必须位于包的最外层（类似 `spring-boot` 的默认扫描路径。）**  
 
 上面两点在后面 `pluign.yml` 配置文件处会解释原因
 
